@@ -5,11 +5,14 @@ using UnityEngine;
 public class SnowboarderController : MonoBehaviour
 {
     Rigidbody2D rb2dPlayer;
+
     [SerializeField] float torqueAmount = 10f;
+
 
     void Start()
     {
         rb2dPlayer = GetComponent<Rigidbody2D>();
+        
     }
 
     void Update()
@@ -22,6 +25,5 @@ public class SnowboarderController : MonoBehaviour
         {
             rb2dPlayer.AddTorque(-torqueAmount);
         }
-
     }
 }
