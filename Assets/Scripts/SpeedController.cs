@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpeedControls : MonoBehaviour
+public class SpeedController : MonoBehaviour
 {
 
     SurfaceEffector2D surfEffSnow;
@@ -12,7 +12,7 @@ public class SpeedControls : MonoBehaviour
     void Start()
     {
         surfEffSnow = GetComponent<SurfaceEffector2D>();
-        surfEffSnow.speed = 2f;
+        surfEffSnow.speed = 4f;
     }
 
 
